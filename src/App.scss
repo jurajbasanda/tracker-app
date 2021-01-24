@@ -1,0 +1,206 @@
+$blue: #53bfef;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	background-color: $blue;
+	font-family: 'Roboto', 'Sathu';
+	color: white;
+	text-align: center;
+}
+.strong {
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+
+.red{color: rgb(209, 34, 34)}
+.modal {
+	min-width: 15rem;
+	padding: 1rem;
+	background-color: white;
+	border: none;
+	color: $blue !important;
+	border-radius: 26px;
+	position: fixed;
+	transform: translate(-50%, -50%);
+	z-index: 1000;
+	color: black;
+	display: grid;
+	grid-template-rows: 1fr 3fr;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-items: flex-end;
+	top: 50%;
+	left: 50%;
+	button {
+		background-color: white;
+		border: none;
+		svg {
+			font-size: 2.5rem;
+			color: $blue;
+		}
+	}
+	form {
+		font-size: 1.5rem;
+
+		h1 {
+			margin-bottom: 1.3rem;
+		}
+		label{font-size: 1rem;}
+		input {
+			width: 80%;
+			border: 1px solid $blue;
+			border-radius: 26px;
+			font-size: 1.5rem;
+			padding: 0.5rem;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+			margin-right: 1rem;
+		}
+		button {
+			width: 80%;
+			background-color: $blue;
+			border-radius: 26px;
+			border: none;
+			font-size: 1.5rem;
+			padding:  0.5rem;
+		}
+	}
+}
+.overlayStyle {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.548);
+	z-index: 1000;
+}
+.App {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: 1rem;
+	padding-left: 15rem;
+	padding-right: 15rem;
+}
+h1 {
+	font-size: 1.2rem;
+}
+h2 {
+	font-size: 1rem;
+	margin: 1rem;
+}
+.head-group {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.head {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+	margin-bottom: 0.5rem;
+}
+.body-group {
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	.person {
+		height: 100%;
+		svg {
+			height: 18rem;
+			margin: 0.5rem;
+		}
+	}
+}
+.body-water {
+	font-size: 1.4rem;
+}
+.body-info {
+	position: absolute;
+	right: 16%;
+	top: 32%;
+	button {
+		font-size: 1.4rem;
+		color: white;
+		background-color: $blue;
+		border: none;
+		cursor: pointer;
+	}
+}
+
+.options {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 0.5rem;
+	button{
+		color: white;
+		border: 0;
+		background-color: $blue;
+		margin:0.5rem;
+		font-size: 1.1rem;
+		text-align: center;
+
+	}
+}
+span {
+	margin: 1rem;
+}
+.adding-buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	button{
+		color: white;
+		border: 0;
+		background-color: $blue;
+		font-size: 1.1rem;
+		text-align: center;
+
+	}
+	img {
+		width: 3rem;
+		margin: 0.6rem;
+	}
+}
+/*---------------------------------------------------------------950px------*/
+@media screen and (max-width: 950px) {
+	.App {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+}
+/*---------------------------------------------------------------950px------*/
+@media screen and (max-width: 550px) {
+	.App {
+		padding: 0rem;
+	}
+}
+
+.body-svg {
+	.a{
+		fill:#088ecf;
+		height: 100%;
+	}
+	.b{
+		fill:#53bfef;
+	}
+	.c{
+		fill:rgba(176,222,243,0.11);
+		stroke:#088ecf;
+		stroke-width:3px;
+	}
+}
